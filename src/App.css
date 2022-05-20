@@ -1,38 +1,97 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto 0 auto;
+  width: 900px;
+}
+
+.icon {
+  cursor: pointer;
+  place-self: end;
+}
+
+.cards {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.shop-card {
+  width: 26%;
+  background-color: #f5f5f5;
+  margin-top: 60px;
+  box-shadow: 4px 2px 4px #00000030;
+}
+
+.shop-card > img {
+  width: 100%;
+}
+
+.card-title {
+  text-align: center;
+  margin-top: 15px;
+  text-transform: uppercase;
+}
+
+.card-color {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card-price-button {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card-price {
+  align-self: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card-button {
+  border-radius: 13px;
+  width: 46%;
+  height: 25px;
+  border: 1px solid red;
+  color: red;
+  text-transform: uppercase;
+}
+
+.shop-item {
+  display: flex;
+  background-color: #f5f5f5;
+  height: 90px;
+  margin-top: 5px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.shop-item > img {
+  width: 115px;
+  height: 90px;
+  object-fit: cover;
+}
+
+.items {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.item-title {
+  text-transform: uppercase;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.item-button {
+  border-radius: 13px;
+  width: 130px;
+  height: 25px;
+  border: 1px solid red;
+  color: red;
+  text-transform: uppercase;
+  margin-right: 25px;
 }
